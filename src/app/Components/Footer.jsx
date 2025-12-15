@@ -5,9 +5,6 @@ import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
 import { useState } from "react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
-
-import fotterbg1 from "../assets/Images/leftbg.png";
-import footerbg2 from "../assets/Images/rightbgfooter.png";
 import Logo from "../assets/Images/logo/logo.svg";
 import SocialProofModal from "./SocialProofForm";
 
@@ -28,16 +25,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#111111] text-sm relative overflow-hidden">
       {/* LEFT BG */}
-      <div
-        className="hidden lg:block absolute -left-10 top-0 h-full w-[350px] bg-no-repeat opacity-10 pointer-events-none rotate-[89.62deg]"
-        style={{ backgroundImage: `url(${fotterbg1.src})` }}
-      />
-
-      {/* RIGHT BG */}
-      <div
-        className="hidden lg:block absolute right-0 top-0 h-full w-[400px] bg-no-repeat opacity-10 pointer-events-none rotate-180"
-        style={{ backgroundImage: `url(${footerbg2.src})` }}
-      />
+  
 
       {/* NEWSLETTER */}
       <div className="px-4 sm:px-8 lg:px-12 py-8 flex flex-col md:flex-row justify-between items-center border-b border-gray-700 relative z-10">

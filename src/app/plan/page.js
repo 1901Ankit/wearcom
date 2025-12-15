@@ -1,7 +1,7 @@
 "use client";
 import { Check, Zap } from "lucide-react";
 import TopBanner from "../Components/TopBanner";
-import bgimage from "../assets/Images/home/Bg.png";
+import bgimage from "../assets/Images/home/ban.png";
 
 export default function PricingPlans() {
   const plans = [

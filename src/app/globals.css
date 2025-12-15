@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-body);
+}
+
+@theme {
+  --color-main: #ffd232;
+  --color-primary: #5c7e63;
+  --color-secondary: #efeeda;
+  --color-dark: #1c1c1c;
+  --color-light: #ffffff;
+  --font-heading: var(--font-oregano);
+  --font-body: var(--font-outfit);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+button{
+  cursor: pointer;
+}
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+
+.otp-verification-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.otp-instruction {
+  font-weight: bold;
+  font-size: 15px;
+}
+.otpverif {
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 10px;
+}
+
+/* .otp-input-wrapper {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+} */
+
+.otp-input {
+  width: 40px; 
+  height: 50px; 
+  font-size: 20px;
+  font-weight: 600;
+  color: #3e3e3e;
+  background-color: transparent;
+  border: 1px solid #3e3e3e; 
+  text-align: center;
+  border-radius: 4px; 
+  margin: 0 5px; 
+}
+
+.otp-input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+
+
+
+ /* Fix autofill blue background */ */
+ input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px #E9E9CF inset !important;
+  box-shadow: 0 0 0px 1000px #E9E9CF inset !important;
+  -webkit-text-fill-color: #ffd232 !important;
+  transition: background-color 5000s ease-in-out 0s;
+} 
+
+input:focus {
+  background-color: #E9E9CF !important;
+  outline: none;
+} 

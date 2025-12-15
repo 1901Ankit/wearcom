@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import TopBanner from "../Components/TopBanner";
-import banner from "../assets/Images/offer/banner.png";
+import banner from "../assets/Images/home/ban.png";
 import bgimage from "../assets/Images/home/ban.png";
 
 export default function Offer() {

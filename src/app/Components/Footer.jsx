@@ -8,7 +8,6 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import Logo from "../assets/Images/logo/logo.svg";
 import SocialProofModal from "./SocialProofForm";
 
-/* ================= STATIC FOOTER (NO API) ================= */
 export default function Footer() {
   const [email, setEmail] = useState("");
   const [isSocialModalOpen, setIsSocialModalOpen] = useState(false);

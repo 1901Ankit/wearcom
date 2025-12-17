@@ -1,9 +1,6 @@
 'use client';
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { ArrowRight, X } from "lucide-react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -15,7 +12,6 @@ import TopSelling from "./Components/TopSelling";
 import WhyChooseUs from "./Components/WhyChooseUs";
 import Testimonials from "./Components/Testimonials";
 import Slider from "./Components/Slider";
-import Link from "next/link";
 import OfferBanner from "./Components/WhyChooseUs";
 import HotPicksMotion from "./Components/pick";
 import KidsHero from "./Components/kidswear";
